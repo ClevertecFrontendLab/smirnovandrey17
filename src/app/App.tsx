@@ -1,33 +1,35 @@
 import './App.css';
 
-import { useState } from 'react';
+import { ChakraProvider } from '@chakra-ui/react';
 
-import reactLogo from '~/assets/react.svg';
+import { Layout } from '~/components/Layout';
 import { useGetPostsQuery } from '~/query/services/posts.ts';
+import { theme } from '~/theme';
 
 function App() {
-    const [count, setCount] = useState(0);
     const { data: _data, isLoading: _isLoading } = useGetPostsQuery();
 
     return (
-        <>
-            <div>
-                <a href='https://vite.dev' target='_blank'>
-                    <img src='/vite.svg' className='logo' alt='Vite logo' />
-                </a>
-                <a href='https://react.dev' target='_blank'>
-                    <img src={reactLogo} className='logo react' alt='React logo' />
-                </a>
-            </div>
-            <h1>Vite + React</h1>
-            <div className='card'>
-                <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
-            </div>
-            <p className='read-the-docs'>Click on the Vite and React logos to learn more</p>
-        </>
+        <ChakraProvider theme={theme}>
+            <Layout>
+                <div>
+                    <p>Main content area 1</p>
+                    <p>Main content area 2</p>
+                    <p>Main content area 3</p>
+                    <p>Main content area 4</p>
+                    <p>Main content area 5</p>
+                    <p>Main content area 6</p>
+                    <p>Main content area 7</p>
+                    <p>Main content area 8</p>
+                    <p>Main content area 9</p>
+                    <p>Main content area 10</p>
+                    <p>Main content area 11</p>
+                    <p>Main content area 12</p>
+                    <p>Main content area 13</p>
+                    <p>Main content area 14</p>
+                </div>
+            </Layout>
+        </ChakraProvider>
     );
 }
 
