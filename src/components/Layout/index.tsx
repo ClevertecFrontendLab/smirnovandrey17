@@ -1,6 +1,6 @@
 import { Box, Flex } from '@chakra-ui/react';
 
-import { breakpoints as bp } from '~/app/consts';
+import { breakpointNames as bp } from '~/app/consts';
 
 import { BarBottom } from '../BarBottom';
 import { Header } from '../Header';

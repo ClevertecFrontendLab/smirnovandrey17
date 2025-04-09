@@ -1,4 +1,4 @@
-import { breakpoints as bp } from '~/app/consts';
+import { breakpointNames as bp } from '~/app/consts';
 
 export const breakpoints = {
     [bp.base]: '0px',
