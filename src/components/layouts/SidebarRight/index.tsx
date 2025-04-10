@@ -1,10 +1,11 @@
 import { Box } from '@chakra-ui/react';
 
+import { ReactionWidgetCtl } from '~/components/ui-kit/widgets/ReactionWidget/ReactionWidgetCtr';
+
 export function SidebarRight() {
     return (
-        <Box>
-            <h2 style={{ fontSize: '1rem', fontWeight: 'bold' }}>Right Sidebar</h2>
-            <p>Additional content goes here.</p>
+        <Box px='56px' py='16px' float='right'>
+            <ReactionWidgetCtl isColumn size='lg' />
         </Box>
     );
 }

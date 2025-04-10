@@ -2,8 +2,8 @@ import { Box, Flex, Hide, Show } from '@chakra-ui/react';
 
 import { ButtonMenu } from '~/components/ui-kit/buttons/ButtonMenu';
 import { Logo } from '~/components/ui-kit/Logo';
-import { Reaction } from '~/components/ui-kit/Reaction';
 import { UserProfileCtr } from '~/components/ui-kit/UserProfile/UserProfileCtr';
+import { ReactionWidgetCtl } from '~/components/ui-kit/widgets/ReactionWidget/ReactionWidgetCtr';
 
 export const Header = () => (
     <Flex height='100%' alignItems='center' justifyContent='space-between'>
@@ -11,9 +11,7 @@ export const Header = () => (
         <Hide above='lg'>
             <Flex alignItems='center'>
                 <Flex mx='16px'>
-                    <Reaction type='bookmark'>185</Reaction>
-                    <Reaction type='share'>589</Reaction>
-                    <Reaction type='like'>587</Reaction>
+                    <ReactionWidgetCtl />
                 </Flex>
                 <ButtonMenu />
             </Flex>
