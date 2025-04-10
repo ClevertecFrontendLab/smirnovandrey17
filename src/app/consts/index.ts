@@ -1,4 +1,4 @@
-export const breakpointNames = {
+export const sizeNames = {
     base: 'base',
     sm: 'sm',
     md: 'md',

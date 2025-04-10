@@ -1,8 +1,16 @@
-import styles from './ButtonMenu.module.scss';
+import { Flex } from '@chakra-ui/react';
+
 import leftIcon from './left-icon.svg';
 
-export const ButtonMenu = ({ classes }: { classes?: string }) => (
-    <div className={classes ? `${styles.wrap} ${classes}` : styles.wrap}>
+export const ButtonMenu = () => (
+    <Flex
+        justifyContent='center'
+        alignItems='center'
+        p='12px'
+        width='48px'
+        height='48px'
+        cursor='pointer'
+    >
         <img src={leftIcon} alt='main menu button' />
-    </div>
+    </Flex>
 );
