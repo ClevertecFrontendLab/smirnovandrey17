@@ -15,6 +15,20 @@ export const components = {
                 fontSize: '16px',
                 lineHeight: '150%',
             },
+            header: {
+                fontFamily: '"Inter", sans-serif',
+                fontWeight: 500,
+                fontSize: '18px',
+                lineHeight: '156%',
+                color: 'black',
+            },
+            secondary: {
+                fontFamily: '"Inter", sans-serif',
+                fontWeight: 400,
+                fontSize: '14px',
+                lineHeight: '143%',
+                color: 'blackAlpha.700',
+            },
         },
     },
 };
