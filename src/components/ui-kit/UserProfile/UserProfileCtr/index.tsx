@@ -1,5 +1,5 @@
 import { UserProfile } from '..';
-import avatarImg from './assets/image.png';
+import avatarImg from './assets/avatar.png';
 
 export const UserProfileCtr = () => (
     <UserProfile

@@ -1,6 +1,6 @@
 import { Box, Flex, Hide, Show } from '@chakra-ui/react';
 
-import { ButtonMenu } from '~/components/ui-kit/ButtonMenu';
+import { ButtonMenu } from '~/components/ui-kit/buttons/ButtonMenu';
 import { Logo } from '~/components/ui-kit/Logo';
 import { Reaction } from '~/components/ui-kit/Reaction';
 import { UserProfileCtr } from '~/components/ui-kit/UserProfile/UserProfileCtr';
