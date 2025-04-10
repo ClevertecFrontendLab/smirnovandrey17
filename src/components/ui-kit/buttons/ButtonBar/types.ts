@@ -2,8 +2,9 @@ import { ComponentType } from 'react';
 
 export type TButtonBarProps = {
     label: string;
-} & // Icon version
-(| {
+    size?: 'lg';
+} & ( // Icon version
+    | {
           icon: ComponentType<{ boxSize?: string | number; color?: string }>;
           imageSrc?: never;
       }

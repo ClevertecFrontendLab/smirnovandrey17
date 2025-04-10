@@ -2,7 +2,14 @@ import { Avatar, Flex, Text } from '@chakra-ui/react';
 
 import type { TButtonBarProps } from './types';
 
-export const ButtonBar = ({ active, icon: Icon, imageSrc, label, invert }: TButtonBarProps) => {
+export const ButtonBar = ({
+    active,
+    icon: Icon,
+    imageSrc,
+    label,
+    invert,
+    size,
+}: TButtonBarProps) => {
     const iconElement = Icon ? (
         <Icon
             boxSize={active && !invert ? '16px' : '24px'}
@@ -29,7 +36,7 @@ export const ButtonBar = ({ active, icon: Icon, imageSrc, label, invert }: TButt
             }
         >
             <Avatar
-                size='mdl'
+                size={size === 'lg' ? 'md' : 'sml'}
                 icon={iconElement}
                 src={imageSrc}
                 bg={active || invert ? 'black' : 'transparent'}

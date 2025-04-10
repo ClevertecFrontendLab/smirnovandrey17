@@ -47,7 +47,7 @@ export const components = {
     },
     Avatar: {
         sizes: {
-            mdl: {
+            sml: {
                 container: {
                     width: '40px',
                     height: '40px',
