@@ -59,8 +59,12 @@ export const Layout = ({ children }: TLayoutProps) => (
             <Box
                 as='aside'
                 w={{ base: 0, lg: `${s.sidebars.width}px` }}
+                h={`calc(100vh - ${s.header.height.lg}px)`}
                 display={{ base: 'none', lg: 'block' }}
                 bg='#e8ecf4'
+                position='sticky'
+                top={`${s.header.height.lg}px`}
+                overflowY='auto'
             >
                 <SidebarLeft />
             </Box>
@@ -72,8 +76,12 @@ export const Layout = ({ children }: TLayoutProps) => (
             <Box
                 as='aside'
                 w={{ base: 0, lg: `${s.sidebars.width}px` }}
+                h={`calc(100vh - ${s.header.height.lg}px)`}
                 display={{ base: 'none', lg: 'block' }}
                 bg='#e8ecf4'
+                position='sticky'
+                top={`${s.header.height.lg}px`}
+                overflowY='auto'
             >
                 <SidebarRight />
             </Box>

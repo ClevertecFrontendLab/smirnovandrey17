@@ -17,5 +17,19 @@ export const IndexPage = () => (
         <p>Main content area 12</p>
         <p>Main content area 13</p>
         <p>Main content area 14</p>
+        <p>Main content area 15</p>
+        <p>Main content area 16</p>
+        <p>Main content area 17</p>
+        <p>Main content area 18</p>
+        <p>Main content area 19</p>
+        <p>Main content area 20</p>
+        <p>Main content area 21</p>
+        <p>Main content area 22</p>
+        <p>Main content area 23</p>
+        <p>Main content area 24</p>
+        <p>Main content area 25</p>
+        <p>Main content area 26</p>
+        <p>Main content area 27</p>
+        <p>Main content area 28</p>
     </div>
 );
