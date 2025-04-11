@@ -1,10 +1,12 @@
 import { Box } from '@chakra-ui/react';
 
+import { MenuSide } from '~/components/ui-kit/widgets/MenuSide';
+import { menuModel } from '~/components/ui-kit/widgets/MenuSide/menuModel';
+
 export function SidebarLeft() {
     return (
-        <Box>
-            <h2 style={{ fontSize: '1rem', fontWeight: 'bold' }}>Left Sidebar</h2>
-            <p>Menu items go here.</p>
+        <Box mt='34px'>
+            <MenuSide data={menuModel} />
         </Box>
     );
 }
