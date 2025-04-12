@@ -48,6 +48,10 @@ export const components = {
                 ...controlSecondary,
                 fontWeight: 700,
             },
+            'controlSecondary.thin': {
+                ...controlSecondary,
+                fontWeight: 400,
+            },
             controlThird,
             'controlThird.light': {
                 ...controlThird,
@@ -83,6 +87,17 @@ export const components = {
                     width: '40px',
                     height: '40px',
                 },
+            },
+        },
+    },
+    Breadcrumb: {
+        baseStyle: {
+            link: {
+                fontFamily: '"Inter", sans-serif',
+                fontSize: '16px',
+                lineHeight: '150%',
+                fontWeight: 400,
+                color: 'blackAlpha.700',
             },
         },
     },
