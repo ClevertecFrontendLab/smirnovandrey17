@@ -1,11 +1,11 @@
-import { ComponentType } from 'react';
+import { TIcon } from '~/components/ui-kit/Icons/types';
 
 export type TButtonBarProps = {
     label: string;
     size?: 'lg';
 } & ( // Icon version
     | {
-          icon: ComponentType<{ boxSize?: string | number; color?: string }>;
+          icon: TIcon;
           imageSrc?: never;
       }
     // Image version

@@ -1,0 +1,22 @@
+.wrapMenu {
+  &::-webkit-scrollbar {
+    width: 8px; /* Thin scrollbar like mobile */
+    height: 8px; /* For horizontal scrollbars */
+  }
+  &::-webkit-scrollbar-track {
+    //background: transparent; /* Fully transparent track */
+    border: none;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.04);
+    margin: 0 0 8px 0;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.16);
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3); /* Slightly darker on hover */
+  }
+}

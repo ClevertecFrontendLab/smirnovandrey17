@@ -27,7 +27,7 @@ const layoutSideGap = {
 const headerSideGap = { ...layoutSideGap, lg: `${s.mainLayout.gapSide.base}px` };
 
 export const Layout = ({ children }: TLayoutProps) => (
-    <Box width={layoutWidth} bg='#f0f0f0' maxW={`${s.mainLayout.maxWidth}px`} mx={layoutSideGap}>
+    <Box width={layoutWidth} maxW={`${s.mainLayout.maxWidth}px`} mx={layoutSideGap}>
         {/* Header */}
         <Box
             as='header'
@@ -61,7 +61,6 @@ export const Layout = ({ children }: TLayoutProps) => (
                 w={{ base: 0, lg: `${s.sidebars.width}px` }}
                 h={`calc(100vh - ${s.header.height.lg}px)`}
                 display={{ base: 'none', lg: 'block' }}
-                bg='#e8ecf4'
                 position='sticky'
                 top={`${s.header.height.lg}px`}
                 overflowY='auto'
@@ -69,7 +68,7 @@ export const Layout = ({ children }: TLayoutProps) => (
                 <SidebarLeft />
             </Box>
             {/* Main Content */}
-            <Box as='main' flexGrow={1} w={{ base: '100%', md: 'auto' }} bg='red'>
+            <Box as='main' flexGrow={1} w={{ base: '100%', md: 'auto' }}>
                 {children}
             </Box>
             {/* Right Sidebar (hidden on mobile) */}
@@ -78,7 +77,6 @@ export const Layout = ({ children }: TLayoutProps) => (
                 w={{ base: 0, lg: `${s.sidebars.width}px` }}
                 h={`calc(100vh - ${s.header.height.lg}px)`}
                 display={{ base: 'none', lg: 'block' }}
-                bg='#e8ecf4'
                 position='sticky'
                 top={`${s.header.height.lg}px`}
                 overflowY='auto'

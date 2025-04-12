@@ -14,14 +14,27 @@ const controlHighlight = {
     color: 'black',
 };
 
+const controlSecondary = {
+    fontFamily: '"Inter", sans-serif',
+    fontWeight: 500,
+    fontSize: '16px',
+    lineHeight: '150%',
+    color: 'black',
+};
+
 export const components = {
     Text: {
         variants: {
-            'control.highlight': controlHighlight,
             control: {
                 ...controlHighlight,
                 fontWeight: 400,
                 color: 'blackAlpha.700',
+            },
+            'control.highlight': controlHighlight,
+            controlSecondary,
+            'controlSecondary.highlight': {
+                ...controlSecondary,
+                fontWeight: 700,
             },
             highlight,
             'highlight.lg': {
