@@ -22,6 +22,14 @@ const controlSecondary = {
     color: 'black',
 };
 
+const controlThird = {
+    fontFamily: '"Inter", sans-serif',
+    fontWeight: 400,
+    fontSize: '12px',
+    lineHeight: '133.333%',
+    color: 'blackAlpha.700',
+};
+
 export const components = {
     Text: {
         variants: {
@@ -30,11 +38,21 @@ export const components = {
                 fontWeight: 400,
                 color: 'blackAlpha.700',
             },
+            'control.bold': {
+                ...highlight,
+                color: 'black',
+            },
             'control.highlight': controlHighlight,
             controlSecondary,
             'controlSecondary.highlight': {
                 ...controlSecondary,
                 fontWeight: 700,
+            },
+            controlThird,
+            'controlThird.light': {
+                ...controlThird,
+                fontWeight: 500,
+                color: 'blackAlpha.400',
             },
             highlight,
             'highlight.lg': {

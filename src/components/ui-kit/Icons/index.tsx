@@ -4,6 +4,7 @@ export { BabyFaceIcon } from './components/BabyFaceIcon';
 export { BakeryIcon } from './components/BakeryIcon';
 export { BookmarkIcon } from './components/BookmarkIcon';
 export { EggplantIcon } from './components/EggplantIcon';
+export { ExitIcon } from './components/ExitIcon';
 export { FaceLoveIcon } from './components/FaceLoveIcon';
 export { GrillIcon } from './components/GrillIcon';
 export { HomeIcon } from './components/HomeIcon';

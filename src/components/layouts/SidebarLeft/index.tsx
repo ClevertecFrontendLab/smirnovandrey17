@@ -1,5 +1,6 @@
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Flex, Text } from '@chakra-ui/react';
 
+import { ExitIcon } from '~/components/ui-kit/Icons';
 import { MenuSide } from '~/components/ui-kit/widgets/MenuSide';
 import { menuModel } from '~/components/ui-kit/widgets/MenuSide/menuModel';
 
@@ -24,10 +25,26 @@ export function SidebarLeft() {
                 <MenuSide data={menuModel} />
             </Box>
             <Box flexGrow={1} position='relative'>
-                <Box position='absolute' bottom={0}>
-                    <p>Hello</p>
-                    <p>hi</p>
-                </Box>
+                <Flex
+                    position='absolute'
+                    bottom={0}
+                    px='24px'
+                    pb='32px'
+                    flexDir='column'
+                    gap='16px'
+                >
+                    <Text variant='controlThird.light'>Версия программы 03.25</Text>
+                    <Text variant='controlThird'>
+                        Все права защищены,
+                        <br />
+                        ученический файл,
+                        <br /> ©Клевер Технолоджи, 2025
+                    </Text>
+                    <Flex gap='6px' alignItems='center' cursor='pointer'>
+                        <ExitIcon boxSize='12px' />
+                        <Text variant='control.bold'>Выйти</Text>
+                    </Flex>
+                </Flex>
             </Box>
         </Flex>
     );
