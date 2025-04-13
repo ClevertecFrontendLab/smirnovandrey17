@@ -4,7 +4,12 @@ import { Button, Flex, Input, InputGroup, InputRightElement } from '@chakra-ui/r
 import { FilterIcon } from '~/components/ui-kit/Icons';
 
 export const Filters = () => (
-    <Flex gap='12px' maxW={{ base: '448px', lg: '518px' }} mx='auto'>
+    <Flex
+        gap='12px'
+        maxW={{ base: '448px', lg: '518px' }}
+        mx='auto'
+        mt={{ base: '16px', lg: '32px' }}
+    >
         <Button
             variant='outline'
             size={{ base: 'sm', lg: 'md' }}

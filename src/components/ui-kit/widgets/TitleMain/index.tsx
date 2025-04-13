@@ -11,7 +11,12 @@ export const TitleMain = ({ title, desc }: TTitleMain) => (
             {title}
         </Text>
         {desc && (
-            <Text variant='header1.sub' mt={{ base: '16px', lg: '12px' }}>
+            <Text
+                variant='header1.sub'
+                mt={{ base: '16px', lg: '12px' }}
+                mx='auto'
+                maxW={{ lg: '696px' }}
+            >
                 {desc}
             </Text>
         )}
