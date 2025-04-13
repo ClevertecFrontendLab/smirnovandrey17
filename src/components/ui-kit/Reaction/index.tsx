@@ -2,7 +2,7 @@ import { Flex, Text } from '@chakra-ui/react';
 
 import { BookmarkIcon, FaceLoveIcon, ShareIcon } from '~/components/ui-kit/Icons';
 
-type TSize = 'lg';
+type TSize = 'xs' | 'lg';
 
 type TReactionProps = {
     children: React.ReactNode;
@@ -17,6 +17,13 @@ const iconComponents = {
 };
 
 const config = {
+    xs: {
+        boxSize: '12px',
+        variant: 'highlight',
+        gap: '6px',
+        px: '4px',
+        py: '4px',
+    },
     lg: {
         boxSize: '16px',
         variant: 'highlight.lg',

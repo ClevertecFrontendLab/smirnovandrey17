@@ -3,5 +3,6 @@ export const colors = {
     ['bg.secondary']: '#b1ff2e',
     ['bg.highlight.secondary']: '#c4ff61',
     ['bg.highlight.third']: '#eaffc7',
+    ['bg.highlight.fourth']: '#d7ff94',
     ['highlight']: '#2db100',
 } as const;

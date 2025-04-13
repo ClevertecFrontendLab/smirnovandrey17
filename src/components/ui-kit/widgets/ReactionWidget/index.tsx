@@ -7,9 +7,9 @@ import type { TReactionWidgetConfig, TReactionWidgetData } from './types';
 type TReactionWidgetProps = TReactionWidgetConfig & TReactionWidgetData;
 
 export const ReactionWidget = ({
-    bookmark = 0,
-    share = 0,
-    like = 0,
+    bookmark,
+    share,
+    like,
     isColumn = false,
     size,
 }: TReactionWidgetProps) => {
@@ -19,16 +19,23 @@ export const ReactionWidget = ({
             alignItems='center'
             flexDirection={isColumn ? 'column' : 'row'}
             gap={isColumn ? columnGapSize : undefined}
+            columnGap={size === 'xs' ? '8px' : 0}
         >
-            <Reaction type='bookmark' size={size}>
-                {bookmark}
-            </Reaction>
-            <Reaction type='share' size={size}>
-                {share}
-            </Reaction>
-            <Reaction type='like' size={size}>
-                {like}
-            </Reaction>
+            {bookmark && (
+                <Reaction type='bookmark' size={size}>
+                    {bookmark}
+                </Reaction>
+            )}
+            {share && (
+                <Reaction type='share' size={size}>
+                    {share}
+                </Reaction>
+            )}
+            {like && (
+                <Reaction type='like' size={size}>
+                    {like}
+                </Reaction>
+            )}
         </Flex>
     );
 };

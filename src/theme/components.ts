@@ -93,8 +93,15 @@ export const components = {
             header2: {
                 fontFamily: font1,
                 fontWeight: 500,
-                fontSize: '18px',
-                lineHeight: '156%',
+                fontSize: { base: '24px', lg: '36px', xl: '48px' },
+                lineHeight: { base: '133.333%', lg: '111%', xl: '100%' },
+                color: 'black',
+            },
+            header3: {
+                fontFamily: font1,
+                fontWeight: 500,
+                fontSize: { base: '16px', lg: '18px', xl: '20px' },
+                lineHeight: { base: '150%', lg: '156%', xl: '140%' },
                 color: 'black',
             },
             secondary: {

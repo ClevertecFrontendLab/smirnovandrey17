@@ -1,5 +1,5 @@
 export type TReactionWidgetConfig = {
-    size?: 'lg';
+    size?: 'xs' | 'lg';
     isColumn?: boolean;
 };
 

@@ -69,7 +69,17 @@ export const Layout = ({ children }: TLayoutProps) => (
                 <SidebarLeft />
             </Box>
             {/* Main Content */}
-            <Box as='main' flexGrow={1} w={{ base: '100%', md: 'auto' }}>
+            <Box
+                as='main'
+                flexGrow={1}
+                // w={{ base: '100%', md: 'auto' }}
+                w={{
+                    base: '100%',
+                    md: 'auto',
+                    lg: `calc(100vw - 612px - ${s.centerLayout.gap * 2}px)`,
+                }}
+                // overflowX="hidden"
+            >
                 {children}
             </Box>
             {/* Right Sidebar (hidden on mobile) */}

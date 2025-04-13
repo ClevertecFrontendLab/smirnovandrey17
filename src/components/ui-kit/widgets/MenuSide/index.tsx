@@ -125,8 +125,8 @@ export const MenuSide = ({ data }: { data: TMenuDataProps }) => {
 
     return (
         <Accordion allowMultiple index={expandedIndexes} ml='10px' mr='16px'>
-            {data.map((item) => (
-                <MenuItem key={item.link} item={item} currentPath={location.pathname} />
+            {data.map((item, index) => (
+                <MenuItem key={index} item={item} currentPath={location.pathname} />
             ))}
         </Accordion>
     );
