@@ -210,4 +210,30 @@ export const components = {
             variant: 'solid',
         },
     } as ComponentStyleConfig,
+    FormLabel: {
+        baseStyle: {
+            ...controlSecondary,
+        },
+    },
+    Select: {
+        baseStyle: {
+            field: {
+                fontFamily: font1,
+                fontWeight: 400,
+                fontSize: '16px',
+                lineHeight: '150%',
+                color: 'blackAlpha.700',
+            },
+        },
+        variants: {
+            outline: {
+                field: {
+                    borderColor: 'blackAlpha.200',
+                },
+            },
+        },
+        defaultProps: {
+            variant: 'outline',
+        },
+    },
 };
