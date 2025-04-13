@@ -1,7 +1,7 @@
 import './App.css';
 
 import { ChakraProvider } from '@chakra-ui/react';
-import { BrowserRouter, Route, Routes } from 'react-router';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
 
 import { Layout } from '~/components/layouts/Layout';
 import { PageBuilder } from '~/components/pages/PageBuilder';
@@ -19,6 +19,7 @@ function App() {
                         <Route path='/' element={<PageBuilder />} />
                         <Route path='vegan-cuisine' element={<PageBuilder />} />
                         <Route path='juiciest' element={<PageBuilder />} />
+                        <Route path='*' element={<Navigate to='/vegan-cuisine' replace />} />
                     </Routes>
                 </Layout>
             </ChakraProvider>
