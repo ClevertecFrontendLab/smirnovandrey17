@@ -6,6 +6,7 @@ export { BookmarkIcon } from './components/BookmarkIcon';
 export { EggplantIcon } from './components/EggplantIcon';
 export { ExitIcon } from './components/ExitIcon';
 export { FaceLoveIcon } from './components/FaceLoveIcon';
+export { FilterIcon } from './components/FilterIcon';
 export { GrillIcon } from './components/GrillIcon';
 export { HomeIcon } from './components/HomeIcon';
 export { LeavesIcon } from './components/LeavesIcon';
