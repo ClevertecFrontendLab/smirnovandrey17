@@ -160,6 +160,7 @@ export const components = {
     },
     Button: {
         baseStyle: {
+            fontFamily: font1,
             fontWeight: 600,
             borderRadius: '6px',
             _focus: {
