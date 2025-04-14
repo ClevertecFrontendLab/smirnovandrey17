@@ -25,12 +25,33 @@ export const ButtonBar = ({
             gap='4px'
             justifyContent='center'
             w='100%'
+            h='100%'
             sx={
                 active
                     ? {
-                          backgroundColor: '#ffffd3',
-                          backgroundImage:
-                              'radial-gradient(50% 40% at 48.89% 37.5%, rgba(196, 255, 97, 0.6) 0%, rgba(255, 255, 255, 0) 80%)',
+                          background: '#ffffd3',
+                          position: 'relative',
+                          overflow: 'hidden',
+                          '&::after': {
+                              content: '""',
+                              position: 'absolute',
+                              top: '50%',
+                              left: '50%',
+                              transform: 'translate(-50%, -50%)',
+                              width: '80%',
+                              height: '80%',
+                              background: `
+                                radial-gradient(
+                                    circle at center, 
+                                    rgba(196, 255, 97, 0.4) 0%, 
+                                    rgba(196, 255, 97, 0.2) 40%,
+                                    rgba(255, 255, 255, 0) 70%
+                                )`,
+                              mixBlendMode: 'multiply',
+                              borderRadius: '50%',
+                              zIndex: 0,
+                              filter: 'blur(1px)',
+                          },
                       }
                     : undefined
             }
@@ -40,12 +61,16 @@ export const ButtonBar = ({
                 icon={iconElement}
                 src={imageSrc}
                 bg={active || invert ? 'black' : 'transparent'}
+                position='relative'
+                zIndex='1'
             />
             <Text
                 as='div'
                 textAlign='center'
                 noOfLines={1}
                 variant={active ? 'control.highlight' : 'control'}
+                position='relative'
+                zIndex='1'
             >
                 {label}
             </Text>
