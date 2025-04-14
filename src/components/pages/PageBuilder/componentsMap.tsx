@@ -9,6 +9,7 @@ import { CardSecondarySwarm } from '~/components/ui-kit/widgets/CardSecondarySwa
 import { CarouselCard } from '~/components/ui-kit/widgets/Carousel';
 import { Filters } from '~/components/ui-kit/widgets/Filters';
 import { HeaderWithLink } from '~/components/ui-kit/widgets/HeaderWithLink';
+import { NavSubHorizontal } from '~/components/ui-kit/widgets/NavSubHorizontal';
 import { TitleDesc } from '~/components/ui-kit/widgets/TitleDesc';
 import { TitleMain } from '~/components/ui-kit/widgets/TitleMain';
 
@@ -25,4 +26,5 @@ export const componentsMap = {
     TitleDesc: TitleDesc,
     Divider: Divider,
     CardThirdSwarm: CardThirdSwarm,
+    NavSubHorizontal: NavSubHorizontal,
 } as const;

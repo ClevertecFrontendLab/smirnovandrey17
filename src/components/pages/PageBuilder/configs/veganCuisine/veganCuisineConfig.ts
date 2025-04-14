@@ -17,6 +17,13 @@ export const veganCuisineConfig = {
             component: 'Filters',
         },
         {
+            component: 'NavSubHorizontal',
+            props: {
+                mt: '32px',
+                mb: '24px',
+            },
+        },
+        {
             component: 'CardSecondarySwarm',
             props: {
                 mt: '16px',

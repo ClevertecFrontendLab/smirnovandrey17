@@ -5,4 +5,5 @@ export const colors = {
     ['bg.highlight.third']: '#eaffc7',
     ['bg.highlight.fourth']: '#d7ff94',
     ['highlight']: '#2db100',
+    ['control']: '#134b00',
 } as const;
