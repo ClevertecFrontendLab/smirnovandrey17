@@ -187,6 +187,7 @@ export const mainConfig = {
             component: 'CardThirdSwarm',
             props: {
                 mt: { base: '16px', lg: '24px' },
+                pb: '26px',
                 cardsThird: [
                     {
                         title: 'Хачапури по-аджарски',

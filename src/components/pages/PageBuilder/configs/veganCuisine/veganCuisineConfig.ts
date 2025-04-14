@@ -103,5 +103,73 @@ export const veganCuisineConfig = {
                 ],
             },
         },
+        {
+            component: 'ButtonMore',
+            props: {
+                children: 'Вся подборка',
+                linkPath: '/juiciest',
+                variant: 'highlight',
+                size: 'md',
+                mt: '12px',
+                testAttr: 'juiciest-link-mobile',
+                display: { base: 'flex', lg: 'none' },
+            },
+        },
+        {
+            component: 'Divider',
+            props: {
+                mt: { base: '32px', lg: '40px' },
+            },
+        },
+        {
+            component: 'TitleDesc',
+            props: {
+                title: 'Веганская кухня',
+                desc: 'Интересны не только убеждённым вегетарианцам, но и тем, кто хочет  попробовать вегетарианскую диету и готовить вкусные  вегетарианские блюда.',
+                mt: { base: '8px', lg: '24px' },
+            },
+        },
+        {
+            component: 'CardThirdSwarm',
+            props: {
+                mt: { base: '16px', lg: '24px' },
+                pb: '26px',
+                cardsThird: [
+                    {
+                        title: 'Хачапури по-аджарски',
+                        desc: 'Давно ходил вокруг рецепта хачапури по-аджарски, не решался. Сегодня  попробовал - я в полном восторге! Тесто замечательное, интересный  процесс приготовления, а вкус - не передать, просто сказка!',
+                        badgeTitle: 'Вторые блюда',
+                        badgeIconName: 'PanIcon',
+                        bookmark: 1,
+                        like: 1,
+                    },
+                    {
+                        title: 'Капустные котлеты',
+                        desc: 'Капустные котлеты по этому рецепту получаются необычайно пышными и  невероятно вкусными. Мягкий вкус и лёгкая пряная нотка наверняка помогут сделать эти чудесные котлеты из капусты одним из ваших любимых овощных  блюд.',
+                        badgeTitle: 'Вторые блюда',
+                        badgeIconName: 'PanIcon',
+                        bookmark: 2,
+                        like: 1,
+                    },
+                ],
+                textBtnRows: [
+                    {
+                        text: 'Стейк для вегетарианцев',
+                        buttonText: 'Готовить',
+                        iconName: 'PanIcon',
+                    },
+                    {
+                        text: 'Котлеты из гречки и фасоли',
+                        buttonText: 'Готовить',
+                        iconName: 'PanIcon',
+                    },
+                    {
+                        text: 'Сырный суп с лапшой и брокколи',
+                        buttonText: 'Готовить',
+                        iconName: 'PotIcon',
+                    },
+                ],
+            },
+        },
     ],
 } as const;
