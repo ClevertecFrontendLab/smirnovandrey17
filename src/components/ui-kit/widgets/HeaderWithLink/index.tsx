@@ -11,6 +11,8 @@ type THeaderWithLinkProps = {
     mb?: string | number;
     showLinkBreakpoint?: string;
     variant?: string;
+    isLargeLight?: boolean;
+    testAttr?: string;
 };
 
 export const HeaderWithLink = ({
@@ -21,10 +23,21 @@ export const HeaderWithLink = ({
     mb,
     showLinkBreakpoint = 'base',
     variant,
+    isLargeLight,
     testAttr,
 }: THeaderWithLinkProps) => (
     <Flex justify='space-between' align='center' mt={mt} mb={mb} w='full'>
-        <Header2>{children}</Header2>
+        {isLargeLight ? (
+            <Header2
+                fontSize={{ lg: '30px', xl: '36px' }}
+                fontWeight={{ xl: 400 }}
+                lineHeight={{ lg: '120%', xl: '111%' }}
+            >
+                {children}
+            </Header2>
+        ) : (
+            <Header2>{children}</Header2>
+        )}
         <Show above={showLinkBreakpoint}>
             <ButtonLink
                 linkPath={linkPath}

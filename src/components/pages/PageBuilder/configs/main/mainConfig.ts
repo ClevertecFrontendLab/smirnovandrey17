@@ -131,18 +131,14 @@ export const mainConfig = {
             },
         },
         {
-            component: 'ButtonLink',
+            component: 'ButtonMore',
             props: {
                 children: 'Вся подборка',
-                size: 'md',
                 linkPath: '/juiciest',
                 variant: 'highlight',
+                size: 'md',
                 mt: '12px',
-                position: 'absolute',
-                left: '50%',
-                transform: 'translateX(-50%)',
                 testAttr: 'juiciest-link-mobile',
-                display: { base: 'flex', lg: 'none' },
             },
         },
         {
@@ -151,6 +147,7 @@ export const mainConfig = {
                 title: 'Кулинарные блоги',
                 linkLable: 'Все авторы',
                 linkPath: '/',
+                mt: { base: '32px', lg: '40px' },
                 posts: [
                     {
                         name: 'Елена Высоцкая',

@@ -12,6 +12,6 @@ export const CardBlog = ({ name, nickname, imageSrc, text }) => (
         bg='white'
     >
         <UserProfile name={name} nickname={nickname} imageSrc={imageSrc} />
-        <Text>{text}</Text>
+        <Text variant='third'>{text}</Text>
     </Flex>
 );

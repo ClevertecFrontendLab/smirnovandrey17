@@ -111,6 +111,13 @@ export const components = {
                 lineHeight: '143%',
                 color: 'blackAlpha.700',
             },
+            third: {
+                fontFamily: font1,
+                fontWeight: 400,
+                fontSize: '14px',
+                lineHeight: '143%',
+                color: 'black',
+            },
         },
     },
     Avatar: {
@@ -210,8 +217,12 @@ export const components = {
             ghost: {
                 color: 'blackAlpha.800',
                 bg: 'transparent',
-                _hover: {},
-                _active: {},
+                _hover: {
+                    bg: 'transparent',
+                },
+                _active: {
+                    bg: 'transparent',
+                },
             },
             link: {
                 color: 'blackAlpha.800',
