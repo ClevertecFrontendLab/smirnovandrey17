@@ -55,6 +55,7 @@ export const menuModel = [
         label: 'Веганская кухня',
         link: '/vegan-cuisine',
         icon: LeavesIcon,
+        ['data-test-id']: 'vegan-cuisine',
         subMenu: [
             { label: 'Закуски', link: '/vegan-cuisine/appetizers' },
             { label: 'Первые блюда', link: '/vegan-cuisine/soups' },

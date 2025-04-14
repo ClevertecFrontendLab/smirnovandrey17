@@ -51,6 +51,7 @@ const SubMenuItem = memo(
 
 const MenuItem = memo(
     ({ item, currentPath }: { item: TMenuDataProps[number]; currentPath: string }) => {
+        console.log('item -->', item);
         const isActive = useMemo(
             () =>
                 currentPath === item.link ||
@@ -67,6 +68,8 @@ const MenuItem = memo(
                         bg={isActive ? 'bg.highlight.third' : 'transparent'}
                         px='8px'
                         py='12px'
+                        // @ts-expect-error TODO добавить тип
+                        data-test-id={item['data-test-id']}
                     >
                         <Flex gap='12px' justifyContent='center' alignItems='center' w='100%'>
                             {Icon && <Icon boxSize='24px' />}

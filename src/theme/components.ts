@@ -196,6 +196,10 @@ export const components = {
                 _hover: {},
                 _active: {},
             },
+            highlight: {
+                bg: 'bg.secondary',
+                color: 'black',
+            },
             outline: {
                 border: '1px solid',
                 borderColor: 'blackAlpha.600',
@@ -205,6 +209,7 @@ export const components = {
             },
             ghost: {
                 color: 'blackAlpha.800',
+                bg: 'transparent',
                 _hover: {},
                 _active: {},
             },

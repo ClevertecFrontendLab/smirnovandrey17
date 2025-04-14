@@ -41,6 +41,7 @@ export const Layout = ({ children }: TLayoutProps) => (
             right={0}
             zIndex='sticky'
             px={headerSideGap}
+            data-test-id='header'
         >
             <Header />
         </Box>
@@ -107,6 +108,7 @@ export const Layout = ({ children }: TLayoutProps) => (
             left={0}
             right={0}
             zIndex='sticky'
+            data-test-id='footer'
         >
             <BarBottom />
         </Box>

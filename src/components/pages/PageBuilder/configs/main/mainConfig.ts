@@ -1,3 +1,6 @@
+import blog1 from './assets/blog/1.jpg';
+import blog2 from './assets/blog/2.jpg';
+import blog3 from './assets/blog/3.jpg';
 import cardSec1 from './assets/cardsSecondary/1.jpg';
 import cardSec2 from './assets/cardsSecondary/2.jpg';
 import cardSec3 from './assets/cardsSecondary/3.jpg';
@@ -73,11 +76,15 @@ export const mainConfig = {
             },
         },
         {
-            component: 'Header2',
+            component: 'HeaderWithLink',
             props: {
                 children: 'Самое сочное',
+                linkPath: '/juiciest',
+                linkLabel: 'Вся подборка',
+                showLinkBreakpoint: 'lg',
                 mt: { base: '32px', lg: '40px' },
                 mb: { base: '12px', lg: '24px' },
+                testAttr: 'juiciest-link',
             },
         },
         {
@@ -119,6 +126,49 @@ export const mainConfig = {
                         desc: 'Как раз после праздников, когда мясные продукты еще остались, но никто их уже не хочет, время варить солянку.',
                         bookmark: 124,
                         like: 324,
+                    },
+                ],
+            },
+        },
+        {
+            component: 'ButtonLink',
+            props: {
+                children: 'Вся подборка',
+                size: 'md',
+                linkPath: '/juiciest',
+                variant: 'highlight',
+                mt: '12px',
+                position: 'absolute',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                testAttr: 'juiciest-link-mobile',
+                display: { base: 'flex', lg: 'none' },
+            },
+        },
+        {
+            component: 'CardBlogs',
+            props: {
+                title: 'Кулинарные блоги',
+                linkLable: 'Все авторы',
+                linkPath: '/',
+                posts: [
+                    {
+                        name: 'Елена Высоцкая',
+                        nickname: 'elenapovar',
+                        imageSrc: blog1,
+                        text: 'Как раз после праздников, когда мясные продукты еще остались, но никто их уже не хочет, время варить солянку.',
+                    },
+                    {
+                        name: 'Alex Cook',
+                        nickname: 'funtasticooking',
+                        imageSrc: blog2,
+                        text: 'Как раз после праздников, когда мясные продукты еще остались, но никто их уже не хочет, время варить солянку.',
+                    },
+                    {
+                        name: 'Екатерина Константинопольская',
+                        nickname: 'bake_and_pie',
+                        imageSrc: blog3,
+                        text: 'Как раз после праздников, когда мясные продукты еще остались, но никто их уже не хочет, время варить солянку.',
                     },
                 ],
             },
