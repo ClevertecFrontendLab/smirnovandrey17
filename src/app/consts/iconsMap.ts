@@ -1,6 +1,7 @@
 import {
     BabyFaceIcon,
     BakeryIcon,
+    EggplantIcon,
     GrillIcon,
     LeavesIcon,
     NationalFoodIcon,
@@ -16,4 +17,5 @@ export const iconsMap = {
     BakeryIcon,
     BabyFaceIcon,
     NationalFoodIcon,
+    EggplantIcon,
 } as const;

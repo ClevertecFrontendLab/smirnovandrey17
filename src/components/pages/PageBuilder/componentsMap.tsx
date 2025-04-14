@@ -4,6 +4,7 @@ import { ButtonLink } from '~/components/ui-kit/buttons/ButtonLink';
 import { Header2 } from '~/components/ui-kit/texts/header2';
 import { ButtonMore } from '~/components/ui-kit/widgets/ButtonMore';
 import { CardBlogs } from '~/components/ui-kit/widgets/CardBlogs';
+import { CardThirdSwarm } from '~/components/ui-kit/widgets/cards/CardThirdSwarm';
 import { CardSecondarySwarm } from '~/components/ui-kit/widgets/CardSecondarySwarm';
 import { CarouselCard } from '~/components/ui-kit/widgets/Carousel';
 import { Filters } from '~/components/ui-kit/widgets/Filters';
@@ -23,4 +24,5 @@ export const componentsMap = {
     ButtonMore: ButtonMore,
     TitleDesc: TitleDesc,
     Divider: Divider,
+    CardThirdSwarm: CardThirdSwarm,
 } as const;

@@ -51,7 +51,6 @@ const SubMenuItem = memo(
 
 const MenuItem = memo(
     ({ item, currentPath }: { item: TMenuDataProps[number]; currentPath: string }) => {
-        console.log('item -->', item);
         const isActive = useMemo(
             () =>
                 currentPath === item.link ||

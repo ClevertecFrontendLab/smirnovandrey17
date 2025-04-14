@@ -104,6 +104,13 @@ export const components = {
                 lineHeight: { base: '150%', lg: '156%', xl: '140%' },
                 color: 'black',
             },
+            header4: {
+                fontFamily: font1,
+                fontWeight: 500,
+                fontSize: { base: '16px', lg: '20px' },
+                lineHeight: { base: '150%', lg: '140%' },
+                color: 'black',
+            },
             secondary: {
                 fontFamily: font1,
                 fontWeight: 400,
@@ -224,6 +231,17 @@ export const components = {
                 border: '1px solid',
                 borderColor: 'blackAlpha.600',
                 color: 'blackAlpha.800',
+                _hover: {
+                    bg: 'transparent',
+                },
+                _active: {
+                    bg: 'transparent',
+                },
+            },
+            'outline.highlight': {
+                border: '1px solid',
+                borderColor: 'highlight',
+                color: 'highlight',
                 _hover: {
                     bg: 'transparent',
                 },

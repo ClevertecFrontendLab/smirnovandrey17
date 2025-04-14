@@ -1,6 +1,6 @@
 import { Flex, Text } from '@chakra-ui/react';
 
-import { iconsMap } from './iconsMap';
+import { iconsMap } from '~/app/consts/iconsMap';
 
 // @ts-expect-error TODO добавить типы
 export const BadgeSimple = ({ children, variant, iconName }) => {
