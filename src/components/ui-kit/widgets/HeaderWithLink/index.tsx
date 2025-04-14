@@ -1,4 +1,4 @@
-import { Flex, Show } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 
 import { ButtonLink } from '~/components/ui-kit/buttons/ButtonLink';
 import { Header2 } from '~/components/ui-kit/texts/header2';
@@ -38,14 +38,14 @@ export const HeaderWithLink = ({
         ) : (
             <Header2>{children}</Header2>
         )}
-        <Show above={showLinkBreakpoint}>
-            <ButtonLink
-                linkPath={linkPath}
-                variant={typeof variant !== 'undefined' ? variant : 'highlight'}
-                testAttr={testAttr}
-            >
-                {linkLabel}
-            </ButtonLink>
-        </Show>
+        {/* @ts-expect-error TODO Добавить типы */}
+        <ButtonLink
+            linkPath={linkPath}
+            variant={typeof variant !== 'undefined' ? variant : 'highlight'}
+            testAttr={testAttr}
+            display={{ base: 'none', [showLinkBreakpoint]: 'flex' }}
+        >
+            {linkLabel}
+        </ButtonLink>
     </Flex>
 );

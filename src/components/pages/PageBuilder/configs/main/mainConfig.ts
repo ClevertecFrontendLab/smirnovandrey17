@@ -137,6 +137,7 @@ export const mainConfig = {
                 size: 'md',
                 mt: '12px',
                 testAttr: 'juiciest-link-mobile',
+                display: { base: 'flex', lg: 'none' },
             },
         },
         {
