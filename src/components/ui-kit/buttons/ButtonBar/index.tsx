@@ -44,7 +44,7 @@ export const ButtonBar = ({
                                 radial-gradient(
                                     circle at center, 
                                     rgba(196, 255, 97, 0.4) 0%, 
-                                    rgba(196, 255, 97, 0.2) 40%,
+                                    rgba(196, 255, 97, 0.1) 40%,
                                     rgba(255, 255, 255, 0) 70%
                                 )`,
                               mixBlendMode: 'multiply',
