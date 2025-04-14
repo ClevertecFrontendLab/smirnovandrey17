@@ -118,6 +118,13 @@ export const components = {
                 lineHeight: '143%',
                 color: 'black',
             },
+            fifth: {
+                fontFamily: font1,
+                fontWeight: 500,
+                fontSize: { base: '14px', lg: '16px' },
+                lineHeight: { base: '143%', lg: '150%' },
+                color: 'blackAlpha.700',
+            },
         },
     },
     Avatar: {
@@ -163,6 +170,12 @@ export const components = {
                     },
                 },
             },
+        },
+    },
+    Divider: {
+        baseStyle: {
+            borderColor: 'blackAlpha.200',
+            borderWidth: '1px',
         },
     },
     Button: {
@@ -211,8 +224,12 @@ export const components = {
                 border: '1px solid',
                 borderColor: 'blackAlpha.600',
                 color: 'blackAlpha.800',
-                _hover: {},
-                _active: {},
+                _hover: {
+                    bg: 'transparent',
+                },
+                _active: {
+                    bg: 'transparent',
+                },
             },
             ghost: {
                 color: 'blackAlpha.800',

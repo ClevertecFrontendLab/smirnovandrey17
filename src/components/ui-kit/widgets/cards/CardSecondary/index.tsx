@@ -91,11 +91,14 @@ export const CardSecondary = ({
                         variant='outline'
                         size={{ base: 'xs', lg: 'sm' }}
                         w={{ base: '24px', lg: 'auto' }}
+                        leftIcon={
+                            <BookmarkIcon
+                                ml={{ base: '8px', lg: '0' }}
+                                boxSize={{ base: '12px', lg: '14px' }}
+                            />
+                        }
                     >
                         <Show above='lg'>Сохранить</Show>
-                        <Hide above='lg'>
-                            <BookmarkIcon boxSize={{ base: '12px', lg: '14px' }} />
-                        </Hide>
                     </Button>
                     <Button size={{ base: 'xs', lg: 'sm' }}>Готовить</Button>
                 </Flex>

@@ -170,5 +170,19 @@ export const mainConfig = {
                 ],
             },
         },
+        {
+            component: 'Divider',
+            props: {
+                mt: { base: '32px', lg: '40px' },
+            },
+        },
+        {
+            component: 'TitleDesc',
+            props: {
+                title: 'Веганская кухня',
+                desc: 'Интересны не только убеждённым вегетарианцам, но и тем, кто хочет  попробовать вегетарианскую диету и готовить вкусные  вегетарианские блюда.',
+                mt: { base: '8px', lg: '24px' },
+            },
+        },
     ],
 } as const;
