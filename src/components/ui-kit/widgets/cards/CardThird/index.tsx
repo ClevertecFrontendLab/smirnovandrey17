@@ -15,6 +15,11 @@ export const CardThird = ({ title, desc, badgeTitle, badgeIconName, bookmark, sh
         borderColor='blackAlpha.200'
         borderRadius='8px'
         h='100%'
+        transition='all 0.2s ease'
+        _hover={{
+            boxShadow:
+                '0 2px 4px -1px rgba(32, 126, 0, 0.06), 0 4px 6px -1px rgba(32, 126, 0, 0.1)',
+        }}
     >
         <Stack spacing={{ base: '8px' }}>
             <Text variant='header4' noOfLines={1}>

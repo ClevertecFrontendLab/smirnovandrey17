@@ -22,6 +22,11 @@ export const TextButtonRow = ({ text, buttonText, iconName }: TextButtonRowProps
             borderColor='blackAlpha.200'
             borderRadius='8px'
             height={{ base: '52px', xl: '56px' }}
+            transition='all 0.2s ease'
+            _hover={{
+                boxShadow:
+                    '0 2px 4px -1px rgba(32, 126, 0, 0.06), 0 4px 6px -1px rgba(32, 126, 0, 0.1)',
+            }}
         >
             <Flex align='center' gap={{ base: '8px' }}>
                 {Icon && <Icon boxSize='24px' />}

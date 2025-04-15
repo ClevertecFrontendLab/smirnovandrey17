@@ -32,6 +32,11 @@ export const Card = ({
         borderRadius='8px'
         boxShadow='none'
         flexShrink='0'
+        transition='box-shadow 0.2s ease'
+        _hover={{
+            boxShadow:
+                '0 2px 4px -1px rgba(32, 126, 0, 0.06), 0 4px 6px -1px rgba(32, 126, 0, 0.1)',
+        }}
     >
         <CardBody p={0} position='relative'>
             <Hide above='lg'>

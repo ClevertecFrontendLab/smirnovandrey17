@@ -26,6 +26,8 @@ export const CarouselCard = ({ slides }: CarouselCardProps) => (
         overflowX='scroll'
         mr={{ base: `${sizeLayout.mainLayout.gapSide.base}px`, md: '0' }}
         flexGrow='0'
+        pb={2}
+        mb={-2}
     >
         {slides.map((slide) => (
             <Card

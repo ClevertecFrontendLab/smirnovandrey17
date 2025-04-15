@@ -13,6 +13,11 @@ export const CardBlog = ({ name, nickname, imageSrc, text }) => (
         p={{ base: '16px', xl: '24px' }}
         pb={{ base: '16px', xl: '20px' }}
         bg='white'
+        transition='all 0.2s ease'
+        _hover={{
+            boxShadow:
+                '0 2px 4px -1px rgba(32, 126, 0, 0.06), 0 4px 6px -1px rgba(32, 126, 0, 0.1)',
+        }}
     >
         <UserProfile name={name} nickname={nickname} imageSrc={imageSrc} />
         <Text variant='third'>{text}</Text>

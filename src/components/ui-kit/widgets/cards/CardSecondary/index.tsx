@@ -32,13 +32,17 @@ export const CardSecondary = ({
     <ChCard
         direction={{ base: 'row', lg: 'row' }}
         w={{ base: 'full', lg: 'full' }}
-        //maxW={{ base: '320px', lg: '520px' }}
         border='1px solid'
         borderColor='blackAlpha.200'
         borderRadius='8px'
         boxShadow='none'
         flexShrink='0'
         overflow='hidden'
+        transition='box-shadow 0.2s ease'
+        _hover={{
+            boxShadow:
+                '0 2px 4px -1px rgba(32, 126, 0, 0.06), 0 4px 6px -1px rgba(32, 126, 0, 0.1)',
+        }}
     >
         <CardBody p={0} display='flex' flexDir={{ base: 'row', lg: 'row' }}>
             <Box position='relative' flexShrink={0}>
