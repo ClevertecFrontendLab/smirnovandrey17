@@ -1,0 +1,23 @@
+@use "~/styles/functions/getBreakpoint" as *;
+
+.wrap {
+  display: flex;
+  align-items: flex-end;
+  gap: 7px;
+}
+.logo {
+  display: inline-block;
+  min-width: 32px;
+  min-height: 32px;
+}
+.logoText {
+  display: none;
+  margin-bottom: 1px;
+  width: 96px;
+  height: auto;
+  @media (min-width: getBreakpoint(md)) {
+    display: inline-block;
+  }
+}
+
+@debug getBreakpoint(md);
