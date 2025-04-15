@@ -11,16 +11,18 @@ import {
     Text,
 } from '@chakra-ui/react';
 
+import { BadgeSecond } from '~/components/ui-kit/BadgeSecond';
 import { BadgeSimple } from '~/components/ui-kit/BadgeSimple';
 import { BookmarkIcon } from '~/components/ui-kit/Icons';
 import { ReactionWidget } from '~/components/ui-kit/widgets/ReactionWidget';
 
-// @ts-expect-error TODO добавить типы
 export const CardSecondary = ({
     image,
     badgeLabel,
     badgeVariant,
     badgeIconName,
+    badgeSecondLabel,
+    badgeSecondImageSrc,
     title,
     desc,
     bookmark,
@@ -47,6 +49,15 @@ export const CardSecondary = ({
                         </BadgeSimple>
                     </Box>
                 </Hide>
+                {badgeSecondLabel && (
+                    <Show above='lg'>
+                        <Box position='absolute' bottom='20px' left='24px' zIndex={1}>
+                            <BadgeSecond imageSrc={badgeSecondImageSrc}>
+                                {badgeSecondLabel}
+                            </BadgeSecond>
+                        </Box>
+                    </Show>
+                )}
                 <Image
                     objectFit='cover'
                     w={{ base: '158px', lg: '346px' }}

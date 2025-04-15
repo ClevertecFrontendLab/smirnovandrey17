@@ -1,3 +1,5 @@
+import blog1 from './assets/blog/1.jpg';
+import blog2 from './assets/blog/2.jpg';
 import cardSec1 from './assets/cardsSecondary/1.jpg';
 import cardSec2 from './assets/cardsSecondary/2.jpg';
 import cardSec3 from './assets/cardsSecondary/3.jpg';
@@ -24,6 +26,8 @@ export const juiciestConfig = {
                         image: cardSec1,
                         badgeLabel: 'Вторые блюда',
                         badgeIconName: 'PanIcon',
+                        badgeSecondLabel: 'Alex Cook рекомендует',
+                        badgeSecondImageSrc: blog1,
                         title: 'Кнели со спагетти',
                         desc: 'Как раз после праздников, когда мясные продукты еще остались, но никто их уже не хочет, время варить солянку.',
                         bookmark: 85,
@@ -42,6 +46,8 @@ export const juiciestConfig = {
                         image: cardSec3,
                         badgeLabel: 'Вторые блюда',
                         badgeIconName: 'PanIcon',
+                        badgeSecondLabel: 'Елена Высоцкая рекомендует',
+                        badgeSecondImageSrc: blog2,
                         title: 'Лапша с курицей и шафраном',
                         desc: 'Как раз после праздников, когда мясные продукты еще остались, но никто их уже не хочет, время варить солянку.',
                         bookmark: 258,
